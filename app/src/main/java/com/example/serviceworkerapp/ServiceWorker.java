@@ -53,4 +53,8 @@ public class ServiceWorker {
             }
         });
     }
+
+    public void shutDown() {
+        executorService.shutdown();
+    }
 }

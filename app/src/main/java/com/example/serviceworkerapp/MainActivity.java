@@ -94,4 +94,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        serviceWorker1.shutDown();
+        serviceWorker2.shutDown();
+
+    }
 }
